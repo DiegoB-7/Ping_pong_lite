@@ -2,10 +2,8 @@
  * 
 Integrantes:
 Beltran Diego
-
 Concepto:
 Videojuego de Ping Pong de Atari programado usando clases y variables globales en javascript
-
  ***/
 
 //Clase padre Figura encargada de establecer los primeros campos
@@ -63,7 +61,7 @@ class Bola extends Figura
         let arriba_bola = this.y - this.radio;
         let abajo_bola = this.y + this.radio;
         let izquierda_bola = this.x - this.radio;
-        let derecha_bola = this.x + this.radio;
+        let derecha_bola = this.x ;
 
         return (izquierda_jugador_1 < derecha_bola && arriba_jugador_1 < abajo_bola && derecha_jugador_1 > izquierda_bola && abajo_jugador_1 > arriba_bola) || (izquierda_jugador_2 < derecha_bola && arriba_jugador_2 < abajo_bola && derecha_jugador_2 > izquierda_bola && abajo_jugador_2 > arriba_bola );    
     }
