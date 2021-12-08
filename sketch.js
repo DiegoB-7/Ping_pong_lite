@@ -49,12 +49,12 @@ class Bola extends Figura
  colision()
     {
         let arriba_jugador_1 = Jugador_1.y;
-        let abajo_jugador_1 = Jugador_1.y + Jugador_1.ancho;
+        let abajo_jugador_1 = Jugador_1.y + Jugador_1.largo;
         let izquierda_jugador_1 = Jugador_1.x;
         let derecha_jugador_1 = Jugador_1.x ;
         
         let arriba_jugador_2 = Jugador_2.y;
-        let abajo_jugador_2 = Jugador_2.y  + Jugador_2.ancho;
+        let abajo_jugador_2 = Jugador_2.y  + Jugador_2.largo;
         let izquierda_jugador_2 = Jugador_2.x;
         let derecha_jugador_2 = Jugador_2.x ;
 
@@ -126,7 +126,7 @@ class Bola extends Figura
                     this.velocidad_x = direccion * this.velocidad * Math.cos(angulo);
                     this.velocidad_y = this.velocidad * Math.sin(angulo);
     
-                    this.velocidad += 1;
+                    this.velocidad += 0.5;
                     console.log("choco jugador 1");
                 }
     
@@ -148,7 +148,7 @@ class Bola extends Figura
                     this.velocidad_x = direccion * this.velocidad * Math.cos(angulo);
                     this.velocidad_y = this.velocidad * Math.sin(angulo);
                     
-                    this.velocidad +=1;
+                    this.velocidad +=0.5;
                     console.log("choco jugador 2");
                 }
             } 
