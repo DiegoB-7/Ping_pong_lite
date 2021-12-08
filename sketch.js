@@ -188,6 +188,7 @@ class Jugador extends Figura
         if((Jugador_1.colision() && Jugador_1.y > ancho/2))
         {
             Jugador_1.y -= dy;
+            //ola
         } 
         else if ( Jugador_1.colision() && Jugador_1.y < ancho/2)
         {
