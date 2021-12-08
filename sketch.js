@@ -157,8 +157,6 @@ class Bola extends Figura
         }
 }
 
-
-
 //Clase jugador que hace referencia a las raquetas en el juego que es una clase hijo de la clase padre Figura
 class Jugador extends Figura 
 {
@@ -237,10 +235,6 @@ class Jugador extends Figura
     }
 
 }
-    
-
-    
-    
     
     //Funcion que como objetivo tiene es estar imprimiendo los nombres de los jugadores y puntuaciones
     function imprimir(nombre_1,score_1,nombre_2,score_2){
